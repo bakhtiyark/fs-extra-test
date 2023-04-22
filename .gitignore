@@ -1,2 +1,4 @@
-﻿/node_modules
+﻿#ignored directories
+/node_modules
+#ignored file extensions
 *.zip
