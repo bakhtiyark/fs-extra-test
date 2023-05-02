@@ -3,7 +3,7 @@
 let num = 3;
 let bool = true;
 let str = "lala";
-let strNum = "9"
+let strNum = "9";
 
 let numPlusBool = num + bool;
 
@@ -11,9 +11,15 @@ let strPlusBool = str + bool;
 
 let strPlusNum = str + num;
 
-console.log(`Result of adding number(${num}) to string(${str}) is ${strPlusNum}`);
-console.log(`Result of adding boolean value(${bool}) to string(${str}) is ${strPlusBool}`);
-console.log(`Result of adding boolean value(${bool}) to number(${num}) is ${numPlusBool}`);
+console.log(
+  `Result of adding number(${num}) to string(${str}) is ${strPlusNum}`
+);
+console.log(
+  `Result of adding boolean value(${bool}) to string(${str}) is ${strPlusBool}`
+);
+console.log(
+  `Result of adding boolean value(${bool}) to number(${num}) is ${numPlusBool}`
+);
 
 // Multiplications
 let strTimesBool = str * bool;
