@@ -16,11 +16,57 @@
 
 const car = {
   colour: "Black",
-  power: function() {
-    console.log(this.power);
+  horsePower: 177,
+  power: function () {
+    return this.horsePower;
   },
 };
 
 car.colour = "Green";
+/*
 console.log(car.colour);
-console.log(car.power)
+console.log(car.power());
+*/
+
+function addItems({ item }) {}
+
+const testArray = ["Bakhtiyar", "John", "Mohammed"];
+
+function sayHello(name) {
+  if (testArray.includes(name)) {
+    return `Hello ${name}`;
+  } else {
+    return "Hello";
+  }
+}
+
+/*
+console.log(sayHello("Bakhtiyar"));
+console.log(sayHello("Joachim"));
+*/
+
+const typeOfArg = (arg1) => console.log(typeof arg1);
+
+/*
+typeOfArg(1)
+typeOfArg(true)
+*/
+
+function primeNumberCheck(num) {
+  let prime = true;
+  for (i = 2; i < num; i++) {
+    if (num % i === 0) {
+      prime = false;
+    }
+  }
+  prime
+    ? console.log(`${num} is a prime number`)
+    : console.log(`${num} is not a prime number`);
+}
+/*
+primeNumberCheck(1)
+primeNumberCheck(3)
+primeNumberCheck(5)
+primeNumberCheck(27)
+primeNumberCheck(69)
+*/
