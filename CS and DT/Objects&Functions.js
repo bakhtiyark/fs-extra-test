@@ -22,7 +22,13 @@ console.log(car.colour);
 console.log(car.power());
 */
 
-function addItems({ item }) {}
+function addItems(items) {
+  let amount = Object.values(items);
+  return (sum = amount.reduce((acc, val) => {
+    return acc + val;
+  }));
+}
+console.log(addItems({ lala: 11, gaga: 22 , haha: 33}));
 
 const testArray = ["Bakhtiyar", "John", "Mohammed"];
 
